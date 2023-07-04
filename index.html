@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegha Calculator</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div id="cal">
+       <span>Tegha Calculator</span>
+       <div id="display">
+            <input type="text" id="screen" placeholder="0">
+       </div>
+
+        <div id="btns">
+            <div>
+                <input type="button" value="log" onclick="log('log')" >
+                <input type="button" value="cos" onclick="cos(`cos`)" >
+                <input type="button" value="tan" onclick="tan(`tan`)" >
+                <input type="button" value="sin" onclick="sin(`sin`)" >
+                <input type="button" value="sqrt" onclick="sqrt('sqrt')" >
+            </div>
+            <div>
+                <input type="button" value="X" onclick="Display('**2')" >
+                <input type="button" value="^" onclick="Display('**')" >
+                <input type="button" value="(" onclick="Display('(')" >
+                <input type="button" value=")" onclick="Display(')')" >
+                <input type="button" value="sqrt" onclick="Display('sqrt')" >
+            </div>  
+            <div>
+                <input type="button" value="7" onclick="Display(`7`)" >
+                <input type="button" value="8" onclick="Display(`8`)" >
+                <input type="button" value="9" onclick="Display(`9`)" >
+                <input type="button" value="Del" onclick="Del()" id="fn">
+                <input type="button" value="AC" onclick="Clear()" id="fn">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="Display(`4`)" >
+                <input type="button" value="5" onclick="Display(`5`)" >
+                <input type="button" value="6" onclick="Display(`6`)" >
+                <input type="button" value="X" onclick="Display(`*`)" id="fxn">
+                <input type="button" value="/" onclick="Display(`/`)" id="fxn">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="Display(`1`)" >
+                <input type="button" value="2" onclick="Display(`2`)" >
+                <input type="button" value="3" onclick="Display(`3`)" >
+                <input type="button" value="+" onclick="Display(`+`)" id="fxn">
+                <input type="button" value="-" onclick="Display(`-`)" id="fxn">
+
+            </div>   
+            <div>
+                <input type="button" value="000" onclick="Display('000')" >
+                <input type="button" value="00" onclick="Display(`00`)" >
+                <input type="button" value="0" onclick="Display(`0`)" >
+                <input type="button" value="." onclick="Display(`.`)" >
+                <input type="button" value="=" onclick="calculate(`=`)" id="fn">
+                <!-- < button onclick="logg()">LOG<sub>10</sub></button> <br> -->
+                <!-- <button onclick="sinn()">Sin</button> -->
+                <!-- <button onclick='Display()'>Cos</button> <br> -->                                
+            </div>  
+        </div>                           
+    </div>   
+  
+    
+
+ 
+
+
+<script src="/main.js"></script>  
+</body>
+</html>
